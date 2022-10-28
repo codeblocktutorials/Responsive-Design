@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+   
+}
+
+
+section{
+    padding: 5%;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(banner.jpg);
+    background-size: cover;
+    /* background-position: center right; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+}
+
+.banner h2{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-style: 1.5em;
+    font-weight: 700;
+    /* letter-spacing: ; */
+}
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background-color: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 55px;
+    height: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    transition: 0.5s;
+
+}
+
+.sticky{
+    background-color: #fff;
+    padding: 15px 40px;
+}
+
+header .logo{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.sticky .logo{
+    
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: black;
+}
+
+
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header li{
+   
+    list-style: none;
+    font-size: 15px;
+
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.sticky ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    color: #2195f3ba;
+    text-decoration: none;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px
+
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* .content{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} */
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contentBx h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.contentBx p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+.w50{
+    width: 80%; 
+}
+
+.w50 .img{
+    max-width: 100%;
+}
+
+.services{
+    background-color:#111;
+}
+
+.heading-white{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.services .content .serviceBx{
+    padding: 20px 10px;
+    background: #222;
+    color: #fff;
+    max-width: 180px;
+    text-align: center;
+    transition: 0.5s;
+    margin: 20px 15px;
+   
+}
+
+.services .content .serviceBx:hover{
+    background-color: #2195f3bb;
+    transform: scale(1.05);
+}
+
+
+.services .content .serviceBx img{
+    max-width: 60px;
+    filter: invert(1);
+}
+.services .content .serviceBx h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.services .content .serviceBx p{
+    font-size: 12px;
+   
+}
+
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content .workBx{
+    width: 30%;
+   padding:20px 10px ;
+}
+
+.work .content .workBx img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.work .heading h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.work .heading p{
+    font-size: 16px;
+    
+}
+
+.testimonial 
+{
+    background: #f7f7f7;
+
+}
+
+.testimonial .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.testimonial .content .testimonialBx{
+    width: 45%;
+    padding: 30px 20px;
+    margin: 10px;
+    background-color: #2196f3;
+}
+
+.testimonial .content .testimonialBx p{
+    color: #fff;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 300;
+}
+.testimonial .content .testimonialBx h3{
+    color: rgba(255, 255, 255, 0.844);
+    font-weight: 200;
+    text-align: end;
+    font-size: 10px;
+    margin-top: 10px;
+    line-height: 1em;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.contact{
+    background-color: #111;
+    
+}
+
+
+
+.contact h2{
+    color: rgb(255, 255, 255);
+}
+
+
+.formBx{
+  min-width:58% ;
+
+}
+
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo h3, .formBx form h3{
+    font-weight: 500;
+    font-style: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
+.formBx h3{
+    text-align: center;
+}
+
+.formBx form input,
+ .formBx form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #222;
+    resize: none;
+}
+
+.formBx form textarea{
+    min-height: 150px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+    color: #999;
+}
+
+.formBx form input[type='submit']{
+    max-width: 60px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo{
+    min-width: 40%;
+    
+}
+/* 
+.contactBx{
+    position: relative;
+} */
+
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box img{
+    width: 20px;
+    padding: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    filter: invert(1);
+}
+
+
+.contactInfoBx .box .text{
+    display: flex;
+    margin-left: 10px;
+    font-size: 12px;
+    color: white;
+    flex-direction: column;
+    font-weight: 200;
+}
+
+.copyright{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width:500px){
+    header, header{
+         padding: 20px 50px;
+         z-index: 1000;
+    }
+
+    .toggle{
+        background-image: url(./menu.png);
+        height: 20px;
+        width: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .toggle.active{
+        background-image: url(./close.png);
+        height: 20px;
+        width: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .sticky .toggle{
+        filter: invert(1);
+    }
+
+   
+    .menu{
+        position: fixed;
+        z-index: 999;
+        top: 30px;
+        transform: translateX(-500px);
+        width: 100%;
+        height: 100vh;
+        display: block;
+        padding: 100px 50px;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        left: 0;
+        text-align: center;
+        transition: 0.5s;
+       
+    }
+
+    .menu.active{
+        transform: translateX(0);
+    }
+
+    header ul li{
+        color: #fff;
+        margin: 12px;
+        font-size: 12px;
+        
+    }
+
+
+    .banner h2 {
+        font-size: 1.7em;
+        line-height: 1.2em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .btn {
+    
+    margin-top: 22px;
+    padding: 2px 10px;
+    letter-spacing: inherit;
+}
+
+.content {
+    flex-direction: column;
+    
+}
+
+.content img{
+    width: 100%;
+}
+
+.contentBx h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.work .content .workBx {
+    width: 80%;
+    padding: 10px 20px;
+}
+
+
+.testimonial .content .testimonialBx {
+    width: 80%;
+    padding: 20px 15px;
+    margin: 10px;
+    background-color: #2196f3;
+    text-align: center;
+    
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+
+.heading p, .heading-white p{
+    font-size: 12px;
+}
+
+.copyright p{
+    font-size: 9px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contactInfoBx .box .text{
+    
+    font-size: 10px;
+    
+}
+
+}
